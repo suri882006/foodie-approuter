@@ -1,0 +1,39 @@
+{
+    "xsappname": "node-foodie-xsuaa",
+    "tenant-mode": "dedicated",
+    "scopes": [
+		{
+            "name": "uaa.user",
+            "description": "UAA"
+        },
+        {
+            "name": "$XSAPPNAME.view",
+            "description": "Just view the food recipes"
+        },
+        {
+            "name": "$XSAPPNAME.add",
+            "description": "Allows to add and publish a recipe"
+        },
+		{
+            "name": "$XSAPPNAME.share",
+            "description": "Allows to share a recipe"
+        }
+    ],
+    "role-templates": [
+		{
+            "name": "Token_Exchange",
+            "description": "UAA",
+            "scope-references": ["uaa.user"]
+        },
+        {
+            "name": "Premium",
+            "description": "Has all the access",
+            "scope-references": ["$XSAPPNAME.view", "$XSAPPNAME.add", "$XSAPPNAME.share" ]
+        },
+        {
+            "name": "basic",
+            "description": "Basic role to just view the recipes",
+            "scope-references": ["$XSAPPNAME.view"]
+        }
+    ]
+}

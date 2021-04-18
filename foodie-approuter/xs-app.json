@@ -1,0 +1,8 @@
+{
+  "routes": [{
+    "source": "/",
+    "target": "/",
+	"authenticationType": "xsuaa",
+    "destination": "foodie-destination"
+  }]
+}

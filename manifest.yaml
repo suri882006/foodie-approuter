@@ -1,0 +1,19 @@
+applications:
+- name: foodie-approuter
+  instances: 1
+  memory: 128M
+  routes:
+    - route: foodie-approuter-ff302193trial.cfapps.eu10.hana.ondemand.com
+  path: foodie-approuter
+  buildpacks:
+    - nodejs_buildpack
+  env:
+    destinations: >
+      [{
+        "name": "foodie-destination",
+        "url": "https://foodie.cfapps.eu10.hana.ondemand.com",
+        "forwardAuthToken": true
+      }] 
+  timeout: 180
+  services:
+    - foodie-xsuaa

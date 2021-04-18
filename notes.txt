@@ -1,0 +1,3 @@
+https://blogs.sap.com/2020/08/20/demystifying-xsuaa-in-sap-cloud-foundry/
+https://help.sap.com/viewer/4505d0bdaf4948449b7f7379d24d0f0d/2.0.03/en-US/3bfb120045694e21bfadb1344a693d1f.html
+https://blogs.sap.com/2017/11/16/guide-for-user-authentication-and-authorization-in-sap-cloud-platform/
