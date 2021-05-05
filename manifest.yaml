@@ -2,12 +2,13 @@ applications:
 - name: foodie-approuter
   instances: 1
   memory: 128M
-  routes:
-    - route: foodie-approuter-ff302193trial.cfapps.eu10.hana.ondemand.com
   path: foodie-approuter
+  routes:
+    - route: foodie-approuter-foodie.cfapps.eu10.hana.ondemand.com
   buildpacks:
     - nodejs_buildpack
   env:
+    TENANT_HOST_PATTERN: "^(.*)-foodie-approuter-foodie.cfapps.eu10.hana.ondemand.com"
     destinations: >
       [{
         "name": "foodie-destination",

@@ -1,0 +1,9 @@
+{
+   "xsappname":"foodie",
+   "appUrls": {
+      "onSubscription" : "https://foodie.cfapps.eu10.hana.ondemand.com/callback/v1.0/tenants/{tenantId}"
+   },
+   "displayName" : "Foodie SaaS application",
+   "description" : "For testing",
+   "category" : "Test"
+}
